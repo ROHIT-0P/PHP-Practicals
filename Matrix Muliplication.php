@@ -1,4 +1,3 @@
-<html>
 <head>
     <title>3X3 Matrix Multiplication</title>
 </head>
@@ -33,6 +32,39 @@
             }
         }
     }
+    echo "<h3>Matrix A:</h3>";
+    echo "<table>";
+    foreach ($mA as $row) {
+        echo "<tr>";
+        foreach ($row as $element) {
+            echo "<td>$element</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+
+    echo "<h3>Matrix B:</h3>";
+    echo "<table>";
+    foreach ($mB as $row) {
+        echo "<tr>";
+        foreach ($row as $element) {
+            echo "<td>$element</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
+
+    echo "<h3>Resultant Matrix (Matrix A * Matrix B):</h3>";
+    echo "<table>";
+    foreach ($resultMatrix as $row) {
+        echo "<tr>";
+        foreach ($row as $element) {
+            echo "<td>$element</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
     ?>
+
 </body>
 </html>
